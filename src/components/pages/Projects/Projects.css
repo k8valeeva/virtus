@@ -1,0 +1,60 @@
+.ProjectsHeader{
+    display: flex;
+    justify-content: space-between;
+    background: #2196f3;
+    padding: 20px 25px;
+    align-items: center;
+}
+
+.ProjectsSort{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+select.ProjectsSelect{
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background: none;
+    margin-left: 10px;
+    color: #fff;
+}
+
+select.ProjectsSelect:focus{
+    outline: none;
+    outline-offset: 0;
+}
+
+.TabsProjects{
+    display: flex;
+}
+
+.TabsProjects li{
+    cursor: pointer;
+}
+
+.TabsProjects li:last-child{
+    margin-left: 30px;
+}
+
+.TabsProjects a{
+    color:#fff;
+}
+
+.proj, .ProjectCats{
+    float:left;
+}
+
+.ProjectItem{
+    background: #333;
+    margin: 15px 0;
+    min-height: 140px;
+    cursor: pointer;
+
+}
+
+.ProjectItem:hover{
+    background: #fff;
+    cursor: pointer;
+}

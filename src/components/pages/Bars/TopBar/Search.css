@@ -1,0 +1,109 @@
+.inputbox {
+    height: 20px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.inputbox input {
+    min-width: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 1.5px 0;
+    border: 0;
+    background: none;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 100%;
+    transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
+    transition-delay: 0s, 0.4s, 0s;
+    box-shadow: 0 0 0 1px currentColor;
+    color: #fff;
+    cursor: pointer;
+    padding-right: 20px;
+    font-weight: lighter;
+}
+.inputbox input:focus, .inputbox input:valid {
+    width: 100%;
+    transition-delay: 0.4s, 0s, 0.4s;
+    outline: 0;
+    border-radius: 0;
+    cursor: text;
+    padding-left: 1.5px;
+}
+.inputbox input:focus + .del, .inputbox input:valid + .del {
+    pointer-events: all;
+    left: calc(100% - 10px);
+    transition-delay: 0.4s;
+}
+.inputbox input:focus + .del:focus, .inputbox input:valid + .del:focus {
+    box-shadow: 0 0 0 1px currentColor;
+    height: 15px;
+    width: 15px;
+}
+.inputbox input:focus + .del:before, .inputbox input:valid + .del:before {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg) scaleY(0.7);
+    transform: translate(-50%, -50%) rotate(-45deg) scaleY(0.7);
+    transition-delay: 0s;
+}
+.inputbox input:focus + .del:after, .inputbox input:valid + .del:after {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scaleY(0.7);
+    transform: translate(-50%, -50%) rotate(45deg) scaleY(0.7);
+    transition-delay: 0.2s;
+}
+.inputbox .del {
+    margin-left: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    background: none;
+    border-radius: 100%;
+    border: 0;
+    pointer-events: none;
+    transition: left 0.4s ease-in-out;
+    transition-delay: 0s;
+    color: inherit;
+    cursor: pointer;
+}
+.inputbox .del:focus {
+    outline: none;
+}
+.inputbox .del:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: currentColor;
+    width: 1px;
+    height: 15px;
+    -webkit-transform: translate(13.5px, 13.5px) translate(-50%, -50%) rotate(-45deg) scaleY(1);
+    transform: translate(13.5px, 13.5px) translate(-50%, -50%) rotate(-45deg) scaleY(1);
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition-delay: 0.6s;
+}
+.inputbox .del:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: currentColor;
+    width: 1px;
+    height: 15px;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scaleY(0);
+    transform: translate(-50%, -50%) rotate(45deg) scaleY(0);
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition-delay: 0.4s;
+}

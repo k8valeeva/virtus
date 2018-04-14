@@ -1,0 +1,527 @@
+.TopBar{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.UserBtnNav{
+    display: flex;
+}
+
+.UserBtnNav button,
+.UserIcon{
+    color: #fff!important;
+    margin-left: 35px;
+}
+
+.UserBtnNav button i{
+    font-size: 21px;
+}
+
+.AddBtn{
+    border: 2px solid #2196f3;
+    border-radius: 25px;
+    padding: 0 45px;
+}
+
+.AddBtn:hover{
+    background: rgba(33, 150, 243, 0.1);
+}
+
+.AddBtn i{
+    color: #2196f3;
+    margin-left: 15px;
+    font-size: 16px!important;
+}
+
+.UserBtnNav .dropdown button{
+    margin-left: 3px;
+}
+
+.UserIcon{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+}
+.dropdown,
+.btn-secondary,
+.btn-secondary:hover,
+.show > .btn-secondary.dropdown-toggle,
+.btn-secondary:not([disabled]):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle:focus,
+.btn-secondary:not([disabled]):not(.disabled):active:focus,
+.btn-secondary:not([disabled]):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus,
+.btn-secondary:focus,
+.btn-secondary.focus{
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+.dropdown-menu{
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.dropdown-menu.show{
+    left: -110px;
+    top: 12px!important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover{
+    background: none;
+}
+
+.dropdown-item a:hover{
+    color: #2196f3;
+}
+
+.btn{
+    padding: 0.7rem 0.75rem;
+}
+/*Seaaarch*/
+
+
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+
+/* Icons */
+
+.icon {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 auto;
+    fill: currentColor;
+}
+
+
+/* Header */
+
+.codrops-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 2.5em 2.75em 2.5em 1.5em;
+    text-align: left;
+}
+
+.codrops-header__title {
+    font-size: 1em;
+    margin: 0;
+    padding: 0 0.75em;
+}
+
+.codrops-header__side,
+.search-wrap {
+    margin: 0 0 0 auto;
+}
+
+
+/* Bottom nav */
+
+.bottom-nav {
+    position: relative;
+    width: 100%;
+    margin: auto 0 0 0;
+    padding: 2.5em 2.75em 2.5em 2em;
+}
+
+
+/* Demo links */
+
+.codrops-demos {
+    font-weight: bold;
+    padding: 1.25em 0;
+    text-align: right;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.codrops-demos span {
+    display: inline-block;
+    margin: 0 1em 0 0;
+    vertical-align: bottom;
+}
+
+.codrops-demos a {
+    position: relative;
+    display: inline-block;
+    margin: 0 0.1em;
+    padding: 0 0.4em;
+}
+
+.codrops-demos a.current-demo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.25em;
+    height: 2.25em;
+    margin: -1.125em 0 0 -1.125em;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+
+/* Top Navigation Style */
+
+.codrops-links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.codrops-links::after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 2px;
+    height: 70%;
+    opacity: 0.1;
+    background: currentColor;
+    transform: rotate3d(0, 0, 1, 22.5deg);
+}
+
+.codrops-icon {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+
+/* Deco lines */
+
+.decolines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.decoline {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+}
+
+.decoline:first-child {
+    right: 88em;
+}
+
+.decoline:nth-child(2) {
+    right: 68em;
+}
+
+.decoline:nth-child(3) {
+    right: 48em;
+}
+
+.decoline:nth-child(4) {
+    right: 28em;
+}
+
+.decoline:nth-child(5) {
+    right: 8em;
+}
+
+
+@media screen and (max-width: 40em) {
+    .codrops-header {
+        display: block;
+        padding: 4em 1em 0;
+        text-align: center;
+    }
+    .codrops-header__side {
+        margin: 0 auto;
+    }
+    .codrops-links {
+        font-size: 0.85em;
+        margin: 0 auto;
+    }
+    .search-wrap {
+        font-size: 0.85em;
+        position: absolute;
+        top: 2.15em;
+        right: 2em;
+    }
+    .bottom-nav {
+        padding: 0.5em;
+    }
+    .codrops-demos {
+        text-align: center;
+    }
+    .codrops-demos a {
+        margin-bottom: 1em;
+    }
+    .codrops-demos span {
+        display: block;
+        margin: 0 auto 1em;
+        text-align: center;
+    }
+}
+
+
+/* Layout for search container */
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(18, 23, 56, 0.9);
+}
+
+.js .search {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.search::before,
+.search::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    pointer-events: none;
+    border: 1.5em solid #212fa0;
+}
+
+.search::before {
+    top: 0;
+    left: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+}
+
+.search::after {
+    right: 0;
+    bottom: 0;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+
+.btn--search-close {
+    font-size: 2em;
+    position: absolute;
+    top: 1.25em;
+    right: 1.25em;
+    display: none;
+}
+
+.js .btn--search-close {
+    display: block;
+}
+
+.search__form {
+    margin: 5em 0;
+}
+
+.search__input {
+    font-family: inherit;
+    font-size: 10vw;
+    line-height: 1;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 75%;
+    padding: 0.05em 0;
+    color: #d17c78;
+    border-bottom: 2px solid;
+}
+
+.search__input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    opacity: 0.3;
+    color: #060919;
+}
+
+.search__input::-moz-placeholder {
+    opacity: 0.3;
+    /* Mozilla Firefox 19+ */
+    color: #060919;
+}
+
+.search__input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    opacity: 0.3;
+    color: #060919;
+}
+
+.search__input::-webkit-search-cancel-button,
+.search__input::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+.search__input::-ms-clear {
+    display: none;
+}
+
+.search__info {
+    font-size: 90%;
+    font-weight: bold;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0.85em 0;
+    text-align: right;
+    color: #d17c78;
+}
+
+.search__related {
+    display: flex;
+    width: 75%;
+    pointer-events: none;
+}
+
+.search__suggestion {
+    width: 33.33%;
+    text-align: left;
+}
+
+.search__suggestion:nth-child(2) {
+    margin: 0 3em;
+}
+
+.search__suggestion h3 {
+    font-size: 1.35em;
+    margin: 0;
+}
+
+.search__suggestion h3::before {
+    content: '\21FE';
+    display: inline-block;
+    padding: 0 0.5em 0 0;
+}
+
+.search__suggestion p {
+    font-size: 1.15em;
+    line-height: 1.4;
+    margin: 0.75em 0 0 0;
+}
+
+/************************/
+/* Transitions 			*/
+/************************/
+
+.js .search {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.js .search--open {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* Border */
+.search::before,
+.search::after {
+    transition: transform 0.5s;
+}
+
+.search::before {
+    transform: translate3d(-15px, -15px, 0);
+}
+
+.search::after {
+    transform: translate3d(15px, 15px, 0);
+}
+
+.search--open::before,
+.search--open::after {
+    transform: translate3d(0, 0, 0);
+}
+
+/* Close button */
+.btn--search-close {
+    opacity: 0;
+    transform: scale3d(0.8, 0.8, 1);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.search--open .btn--search-close {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+
+/* Search form with input and description */
+.js .search__form {
+    opacity: 0;
+    transform: scale3d(0.8, 0.8, 1);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.js .search--open .search__form {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+
+.search__suggestion {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.search--open .search__suggestion {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.search--open .search__suggestion:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.search--open .search__suggestion:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+@media screen and (max-width:40em) {
+    .search__form {
+        margin: 5em 0 1em;
+    }
+    .btn--search-close {
+        font-size: 1.25em;
+        top: 1.5em;
+        right: 1.5em;
+    }
+    .search__info {
+        text-align: left;
+    }
+    .search__suggestion {
+        font-size: 80%;
+        width: 100%;
+    }
+    .search__suggestion:nth-child(2),
+    .search__suggestion:nth-child(3) {
+        display: none;
+    }
+}

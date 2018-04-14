@@ -1,0 +1,5 @@
+.HomeInboxList li{
+    padding: 30px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+.unread{color:#2196f3;}

@@ -1,0 +1,50 @@
+div#highcharts-iy12otg-0{
+    width: 100%;
+}
+
+h2.MuiTypography-root-140.MuiTypography-title-146.MUIDataTableToolbar-titleText-36 {
+    display: none;
+}
+
+.MuiToolbar-root-138.MuiToolbar-gutters-139.MUIDataTableToolbar-root-32 {
+    display: none;
+}
+
+td.MuiTableCell-root-59.MuiTableCell-body-61.MuiTableCell-paddingCheckbox-65.MUIDataTableSelectCell-root-53 {
+    display: none!important;
+}
+
+th.MuiTableCell-root-59.MuiTableCell-head-60.MuiTableCell-paddingCheckbox-65.MUIDataTableSelectCell-root-53 {
+    display: none!important;
+}
+
+.MuiPaper-root-5.MuiPaper-elevation4-11.MuiPaper-rounded-6 {
+    background: none!important;
+}
+
+table.MuiTable-root-43:focus {
+    outline: none!important;
+}
+
+.MuiTableCell-body-61,
+.MuiTableCell-head-60{
+    color: #fff!important;
+}
+
+.MuiTableCell-root-59{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)!important;
+}
+
+.MuiTableRow-footer-50 {
+    display: none!important;
+}
+
+.MuiPaper-elevation4-11 {
+    box-shadow: none!important;
+}
+
+.MUIDataTableHeadCell-sortActive-102,
+.MuiTableSortLabel-active-114{
+    color: #fff!important;
+}
+

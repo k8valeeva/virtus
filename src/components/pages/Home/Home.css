@@ -1,0 +1,40 @@
+.HomePage{
+    padding: 40px;
+}
+
+.HomePage .row > div{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.row{
+    margin: 0;
+    justify-content: space-between;
+}
+
+.FirstRow{
+    margin-bottom: 30px;
+}
+
+.HomeChart{
+    width: 72%;
+}
+
+.HomeInbox,
+.Calendar{
+    width: 26%;
+}
+
+.HomeLineChart.HomeSalesChart{
+    width: 72%;
+}
+
+.YourProjects{
+    width: 26%;
+}
+
+.captionStyle{
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+}

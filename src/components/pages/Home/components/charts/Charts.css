@@ -1,0 +1,99 @@
+.Progressbar,.ProgressBar{
+    display: flex;
+    align-items: center;
+}
+
+.HomePage .row > div.HomeLineChart{
+    padding:0;
+    width:71%;
+}
+.HomeSalesChart{
+    width: 42%;
+}
+.HomeLineChart .BarItem {
+    min-height:55px;
+    min-width: 55px;
+}
+
+.HomeLineChart .BarItem .CircularProgressbar-path {
+    transform: rotate(180deg);
+    transform-origin: center center;
+}
+
+.CircularProgressbar .CircularProgressbar-path{
+    stroke: #2196f3;
+}
+
+.CircularProgressbar .CircularProgressbar-trail{
+    stroke: rgba(255, 255, 255, 0.1);
+}
+
+.description{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.description p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.description p:last-child {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 6px;
+    color: #959aab;
+}
+
+.t{
+    padding:0;
+    display:inline-block;
+    float:left;color:#fff;
+    margin:0;
+    font-weight:100;
+    font-size:17px;
+}
+.tt{
+    font-size:12px;
+    color:#ccc
+}
+
+.HomeLineChart rect.highcharts-point{
+    visibility:hidden;
+}
+
+.HomeLineChart .highcharts-legend-item.highcharts-areaspline-series span {
+    color: #fff !important;
+    white-space: normal !important;
+    overflow: visible !important;
+}
+
+.HeaderSalesChart{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 25px;
+    align-items: center;
+}
+
+.SelectStyle{
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+}
+
+select.SelectPeriod {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 7px 10px;
+    color: rgba(255, 255, 255, 0.3);
+    background: none;
+    margin-left: 5px;
+}
+
+select.SelectPeriod:focus{
+    outline: none;
+    outline-offset: 0;
+}
+

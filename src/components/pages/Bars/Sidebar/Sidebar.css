@@ -1,0 +1,50 @@
+.LeftBar{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.SideBarList li{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.SideBarList li:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.SideBarList li a{
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.2);
+    padding: 25px 30px;
+}
+
+.SideBarList li i{
+    font-size: 20px;
+}
+
+.SideBarList li i.activeNav{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.SideBarList li.mssg.new:before{
+    content: '';
+    display:inline-block;
+    background: #2196f3;
+    position:absolute;
+    z-index:9;
+    width:10px;
+    height:10px;
+    border-radius: 100%;
+    right: 28px;
+    top: 23px;
+}
+.SideBarList li a:hover,
+.SideBarList li a.activeNav{
+    color: #fff;
+    width: 100%;
+}
+
